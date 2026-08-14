@@ -46,6 +46,17 @@ jobs:
           echo "SUCCESS: out directory exists."
           ls -la out
 
+      - name: Create .nojekyll to ensure GitHub Pages serves files
+        run: |
+          if [ -d "out" ]; then
+            touch out/.nojekyll
+            echo ".nojekyll created"
+            ls -la out | sed -n '1,200p'
+          else
+            echo "out directory missing; cannot create .nojekyll"
+            exit 1
+          fi
+
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
