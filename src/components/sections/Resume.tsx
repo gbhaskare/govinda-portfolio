@@ -1,19 +1,19 @@
 "use client";
 
-import React from 'react';
+import React from "react";
 
 export default function Resume() {
-  const BASE_PATH =
-    process.env.NODE_ENV === "production" ? "/govinda-portfolio" : "";
-
-  const resumePath = `${BASE_PATH}/resume.pdf`;
+  const resumePath = "/govinda-portfolio/resume.pdf";
 
   return (
     <section id="resume" className="py-12">
       <div className="max-w-6xl mx-auto px-4">
-        <h3 className="text-2xl font-semibold text-gray-800 mb-4">Resume</h3>
+        <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+          Resume
+        </h3>
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          {/* View Resume */}
           <a
             href={resumePath}
             target="_blank"
@@ -23,6 +23,7 @@ export default function Resume() {
             View Resume
           </a>
 
+          {/* Download Resume */}
           <a
             href={resumePath}
             download="Govinda-Bhaskare-Resume.pdf"
