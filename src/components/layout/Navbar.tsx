@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const NAV_ITEMS = [
   { href: '#home', label: 'Home' },
@@ -14,28 +14,46 @@ const NAV_ITEMS = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-40 w-full">
-      <nav className="backdrop-blur-sm bg-white/60 dark:bg-black/60 border-b border-gray-200/60 dark:border-gray-800/60">
+    <header className="sticky top-0 z-50 w-full">
+      <nav
+        className={`fixed w-full top-0 z-50 transition-colors duration-300 ${scrolled ? 'bg-[rgba(10,10,10,0.6)] backdrop-blur-sm border-b' : 'bg-transparent'} `}
+      >
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center gap-6">
-              <a href="#home" className="text-lg font-semibold tracking-tight text-indigo-600">
-                Govinda Bhaskare
+              <a href="#home" className="text-lg font-semibold tracking-tight text-white/90">
+                <span className="inline-block rounded px-2 py-1 bg-[rgba(255,255,255,0.04)]">Govinda</span>
+                <span className="ml-2 text-sm text-indigo-300">Bhaskare</span>
               </a>
             </div>
-
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-6">
               {NAV_ITEMS.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600 transition-colors"
+                  className="px-3 py-2 text-sm font-medium text-gray-200 hover:text-white/90 transition-colors"
                 >
                   {item.label}
                 </a>
               ))}
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-4 inline-flex items-center rounded-md bg-gradient-to-r from-indigo-500 to-cyan-400 px-3 py-2 text-sm font-medium text-black"
+              >
+                Resume
+              </a>
             </div>
 
             <div className="md:hidden">
@@ -60,18 +78,21 @@ export default function Navbar() {
         </div>
 
         {open && (
-          <div className="md:hidden border-t border-gray-200/60 dark:border-gray-800/60 bg-white/80 dark:bg-black/80">
+          <div className="md:hidden border-t border-[rgba(255,255,255,0.06)] bg-[rgba(10,10,10,0.7)] backdrop-blur-sm">
             <div className="px-4 pt-2 pb-4 space-y-1">
               {NAV_ITEMS.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100/60 hover:text-indigo-600"
+                  className="block rounded-md px-3 py-2 text-base font-medium text-gray-200 hover:bg-[rgba(255,255,255,0.02)] hover:text-white"
                 >
                   {item.label}
                 </a>
               ))}
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 bg-indigo-400 text-white">
+                Resume
+              </a>
             </div>
           </div>
         )}
