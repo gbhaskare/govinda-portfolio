@@ -63,7 +63,7 @@ export default function Hero() {
               <div className="absolute -inset-6 rounded-full bg-gradient-to-r from-indigo-300 via-purple-300 to-cyan-200 opacity-60 blur-3xl transform-gpu" />
               <div className="relative rounded-full overflow-hidden w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 shadow-lg">
                 <img
-                  src="/images/profile.jpg"
+                  src="/images/govinda_image.jpeg"
                   alt="Profile image of Govinda Bhaskare"
                   onError={(e) => {
                     (e.currentTarget as HTMLImageElement).src = '/images/profile.svg';
