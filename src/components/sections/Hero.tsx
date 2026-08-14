@@ -3,6 +3,8 @@
 import React from 'react';
 
 export default function Hero() {
+  const BASE_PATH =
+    process.env.NODE_ENV === "production" ? "/govinda-portfolio" : "";
   return (
     <section id="home" className="relative overflow-hidden">
       <div className="mx-auto max-w-6xl px-4 py-20 sm:py-24">
@@ -68,10 +70,10 @@ export default function Hero() {
               <div className="absolute -inset-6 rounded-full bg-gradient-to-r from-indigo-300 via-purple-300 to-cyan-200 opacity-60 blur-3xl transform-gpu" />
               <div className="relative rounded-full overflow-hidden w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 shadow-lg">
                 <img
-                  src="/images/govinda_image.jpeg"
+                  src={BASE_PATH + "/images/govinda_image.jpeg"}
                   alt="Profile image of Govinda Bhaskare"
                   onError={(e) => {
-                    (e.currentTarget as HTMLImageElement).src = '/images/profile.svg';
+                    (e.currentTarget as HTMLImageElement).src = BASE_PATH + '/images/profile.svg';
                   }}
                   className="object-cover w-full h-full"
                 />
