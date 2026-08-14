@@ -5,6 +5,7 @@ import Skills from '../components/sections/Skills';
 import Experience from '../components/sections/Experience';
 import Projects from '../components/sections/Projects';
 import Education from '../components/sections/Education';
+import Resume from '../components/sections/Resume';
 import Contact from '../components/sections/Contact';
 import Footer from '../components/sections/Footer';
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Experience />
         <Projects />
         <Education />
+        <Resume />
         <Contact />
         <Footer />
         {/* Other sections will be implemented in later steps */}
