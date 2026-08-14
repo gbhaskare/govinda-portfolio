@@ -24,6 +24,7 @@ export const EXPERIENCES: Experience[] = [
 		id: 'zehntech',
 		company: 'Zehntech, India',
 		role: 'Junior Software Engineer',
+		startDate: 'Aug 2023',
 		// No explicit dates provided in the resume snippet; keep dates optional
 		location: 'Indore, Madhya Pradesh',
 		description:
