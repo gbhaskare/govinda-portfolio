@@ -36,6 +36,14 @@ export default function Hero() {
               >
                 View Resume
               </a>
+
+              <a
+                href={BASE_PATH + "/resume.pdf"}
+                download="Govinda-Bhaskare-Resume.pdf"
+                className="inline-flex items-center justify-center rounded-md border border-gray-300 px-4 py-2 text-gray-700"
+              >
+                Download Resume
+              </a>
             </div>
 
             <div className="flex items-center gap-4 mt-4">
