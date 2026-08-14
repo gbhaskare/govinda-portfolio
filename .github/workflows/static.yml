@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: "pages"
   cancel-in-progress: false
 
 jobs:
@@ -41,20 +41,14 @@ jobs:
       - name: Verify static export
         run: |
           echo "Checking Next.js static output..."
-          if [ ! -d "out" ]; then
-            echo "ERROR: out directory was not generated."
-            echo "Contents of project:"
-            ls -la
-            exit 1
-          fi
-
+          test -d out
+          test -f out/index.html
           echo "SUCCESS: out directory exists."
-          ls -la out
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v6
 
-      - name: Upload static site
+      - name: Upload Next.js static output
         uses: actions/upload-pages-artifact@v4
         with:
           path: ./out
