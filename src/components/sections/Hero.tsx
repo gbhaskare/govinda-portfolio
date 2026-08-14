@@ -14,9 +14,8 @@ export default function Hero() {
             </h1>
             <h2 className="text-xl font-semibold text-gray-700 dark:text-zinc-200">Software Engineer</h2>
             <p className="text-gray-600 dark:text-gray-300 max-w-xl">
-              I build data-driven, responsive web applications using modern frontend technologies and APIs. I have
-              2.5+ years of software development experience working with Angular, React, Next.js, TypeScript, Python and
-              SQL.
+           Software Developer with 2.5+ years of experience developing responsive and data-driven web applications using Angular, React, Next.js, TypeScript, Python, and SQL. Experienced in building API-driven applications and solving real-world development problems, with a strong interest in expanding across the full software development stack.
+
             </p>
 
             <div className="flex flex-wrap items-center gap-3">
@@ -49,10 +48,16 @@ export default function Hero() {
                   <path d="M4.98 3.5a2.5 2.5 0 11-.001 5.001A2.5 2.5 0 014.98 3.5zM3 9h4v12H3zM9 9h3.7v1.6h.1c.5-.9 1.8-1.8 3.7-1.8 4 0 4.7 2.6 4.7 6v7H19v-6.2c0-1.5 0-3.4-2-3.4-2 0-2.3 1.6-2.3 3.3V21H9z" fill="currentColor" />
                 </svg>
               </a>
-
-              <a href="mailto:you@example.com" aria-label="Email" className="text-gray-600 hover:text-indigo-600">
+              <a href="mailto:govindabhaskare123@gmail.com?subject=Hello%20Govinda" aria-label="Email" className="text-gray-600 hover:text-indigo-600">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
                   <path d="M4 4h16v16H4z" stroke="currentColor" strokeWidth="0" fill="currentColor" />
+                </svg>
+              </a>
+
+              <a href="https://wa.me/918889094975?text=Hello%20Govinda" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer" className="text-green-600 hover:text-green-800">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
+                  <path d="M20.52 3.48A11.9 11.9 0 0012.06.5C6.09.5 1.46 4.9 1.12 10.6c-.09 1.18.2 2.34.82 3.38L.5 21.5l7.9-2.07c1 .56 2.14.85 3.3.85 5.97 0 10.6-4.4 10.94-10.1.26-4.25-1.7-8.1-4.12-10.7zM12.06 20.5c-1.02 0-2.02-.27-2.9-.78l-.21-.12-4.69 1.23 1.25-4.58-.13-.24A8.44 8.44 0 013.62 10.6c.28-4.2 4.05-7.56 8.44-7.56 2.25 0 4.36.87 5.95 2.46 1.58 1.58 2.45 3.7 2.16 5.94-.36 3.76-3.6 6.77-7.36 6.77z" fill="currentColor"/>
+                  <path d="M17.2 14.2c-.28-.14-1.66-.82-1.92-.92-.26-.1-.45-.14-.64.14-.18.28-.7.92-.86 1.11-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.24-1.39-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.12-.12.28-.32.42-.48.14-.16.18-.28.28-.46.1-.18.04-.33-.02-.46-.07-.14-.64-1.55-.88-2.14-.23-.56-.47-.48-.64-.49l-.55-.01c-.18 0-.46.07-.7.33-.24.26-.9.87-.9 2.12 0 1.25.92 2.46 1.05 2.63.12.18 1.8 2.8 4.36 3.92 3.04 1.36 3.04.91 3.58.86.36-.03 1.16-.47 1.32-.92.16-.46.16-.86.12-.95-.05-.09-.18-.14-.46-.28z" fill="currentColor"/>
                 </svg>
               </a>
             </div>
