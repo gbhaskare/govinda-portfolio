@@ -29,7 +29,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="/resume.pdf"
+                href={BASE_PATH + "/resume.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center rounded-md border border-gray-200 px-4 py-2 text-gray-700 bg-white hover:bg-gray-50 transition"
