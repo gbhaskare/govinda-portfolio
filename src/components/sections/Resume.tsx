@@ -3,7 +3,7 @@
 import React from "react";
 
 export default function Resume() {
-  const resumePath = "/govinda-portfolio/resume.pdf";
+  const resumePath = "resume.pdf";
 
   return (
     <section id="resume" className="py-12">
