@@ -11,23 +11,19 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
@@ -38,21 +34,35 @@ jobs:
       - name: Build Next.js
         run: npm run build
 
-      - name: Verify static export
+      - name: Verify static output
         run: |
-          echo "Checking Next.js static output..."
-          test -d out
-          test -f out/index.html
+          echo "Checking out directory..."
+          if [ ! -d "out" ]; then
+            echo "ERROR: out directory was not generated."
+            ls -la
+            exit 1
+          fi
+
           echo "SUCCESS: out directory exists."
+          ls -la out
 
       - name: Setup GitHub Pages
-        uses: actions/configure-pages@v6
+        uses: actions/configure-pages@v5
 
-      - name: Upload Next.js static output
-        uses: actions/upload-pages-artifact@v4
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
