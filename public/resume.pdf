@@ -3,125 +3,21 @@
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 4 0 R >> >> /MediaBox [0 0 612 792] /Contents 5 0 R >>
 endobj
 4 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 5 0 obj
-<< /Length 3236 >>
+<< /Length 61 >>
 stream
 BT
-/F1 12 Tf
-50 750 Td
-(Govinda Bhaskare) Tj
-0 -14 Td
-(Indore, Madhya Pradesh 452001) Tj
-0 -14 Td
-(888-909-4975 | govindabhaskare123@gmail.com | linkedin.com/in/govinda-bhaskare | github.com/gbhaskare) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Education) Tj
-0 -14 Td
-(SGSITS July 2019  May 2023) Tj
-0 -14 Td
-(Bachelor of Technology in Information Technology, Indore, Madhya Pradesh) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Relevant Coursework) Tj
-0 -14 Td
-(" Data Structures) Tj
-0 -14 Td
-(" Software Methodology) Tj
-0 -14 Td
-(" Database Management) Tj
-0 -14 Td
-(" Computer Network) Tj
-0 -14 Td
-(" Systems Programming) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Experience) Tj
-0 -14 Td
-(Engineer Philosophy Web Services Pvt.Ltd  Feb 2024  Present) Tj
-0 -14 Td
-(Software Engineer  Indore, Madhya Pradesh) Tj
-0 -14 Td
-(" Developed data-driven web applications using Python, Angular, REST APIs, and SQL databases.) Tj
-0 -14 Td
-(" Built and integrated REST APIs with Angular applications for data processing and application workflows.) Tj
-0 -14 Td
-(" Worked with SQL databases to store, retrieve, and manage application data.) Tj
-0 -14 Td
-(" Developed responsive and reusable UI components using Angular.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Zehntech, India  Aug 2023  Dec 2023) Tj
-0 -14 Td
-(Junior Software Engineer  Indore, Madhya Pradesh) Tj
-0 -14 Td
-(" Built responsive UI components using HTML, CSS, and JavaScript.) Tj
-0 -14 Td
-(" Contributed to a client project in React.js, implementing features and UI logic.) Tj
-0 -14 Td
-(" Explored and integrated chart libraries for dynamic data visualization.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Projects) Tj
-0 -14 Td
-(MAPOG Route Compass | Angular, Angular Material, REST APIs  Feb 2024) Tj
-0 -14 Td
-(" Developed a data-driven route planning application using Angular, REST APIs, and Angular Material for map-based visualization.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Territory Management | Angular, REST APIs, Ag Grid, SQL  May 2024) Tj
-0 -14 Td
-(" Developed a data-driven territory management application using Angular, REST APIs, and Ag Grid for account distribution and hierarchical data visualization.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Customer Targetting | Angular, REST APIs, Ag Grid  Dec 2024) Tj
-0 -14 Td
-(" Developed a data-driven customer targeting application using Angular, REST APIs, and Ag Grid for customer segmentation and prioritization.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Way2Rentals | Next.js, REST APIs, JavaScript  Feb 2026  Jun 2026) Tj
-0 -14 Td
-(" Developed a responsive rental platform using Next.js and React.js to provide users with an intuitive property browsing and rental experience.) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Technical Skills) Tj
-0 -14 Td
-(Languages: Python, C, C++, HTML/CSS, JavaScript, SQL) Tj
-0 -14 Td
-(Frontend: Angular, TypeScript, Next.js, React.js) Tj
-0 -14 Td
-(Database: SQL, MySQL) Tj
-0 -14 Td
-(Technologies/Tools: Angular Material, Ag Grid, RxJS, Chart.js, Git, GitHub, Linux, VS Code, Postman) Tj
-0 -14 Td
-() Tj
-0 -14 Td
-(Leadership / Extracurricular) Tj
-0 -14 Td
-(" Member of club Kshitij in SGSITS College Indore.) Tj
-0 -14 Td
-(" Selected as House Captain in school to lead a group of 60+ students.) Tj
-0 -14 Td
-(" Certificate from SuvenConsultancy Pvt.Ltd for task completion in limited time.) Tj
-0 -14 Td
-() Tj
+/F1 24 Tf
+72 720 Td
+(Govinda Bhaskare - Sample Resume) Tj
 ET
 endstream
 endobj
@@ -136,5 +32,5 @@ xref
 trailer
 << /Size 6 /Root 1 0 R >>
 startxref
-3598
+424
 %%EOF
