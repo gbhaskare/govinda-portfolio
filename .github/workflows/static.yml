@@ -34,34 +34,23 @@ jobs:
       - name: Build Next.js
         run: npm run build
 
-      - name: Verify static output
+      - name: Verify output
         run: |
-          echo "Checking out directory..."
-          if [ ! -d "out" ]; then
-            echo "ERROR: out directory was not generated."
-            ls -la
-            exit 1
-          fi
+          test -f out/index.html
+          test -f out/resume.pdf
+          test -d out/_next
+          test -d out/images
+          echo "All required files exist"
+          ls -lh out/resume.pdf
 
-          echo "SUCCESS: out directory exists."
-          ls -la out
-
-      - name: Create .nojekyll to ensure GitHub Pages serves files
-        run: |
-          if [ -d "out" ]; then
-            touch out/.nojekyll
-            echo ".nojekyll created"
-            ls -la out | sed -n '1,200p'
-          else
-            echo "out directory missing; cannot create .nojekyll"
-            exit 1
-          fi
+      - name: Create .nojekyll
+        run: touch out/.nojekyll
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload static site
-        uses: actions/upload-pages-artifact@v3
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./out
 
